@@ -1,0 +1,564 @@
+/*banner部分左边分类导航*/
+/*#banner{
+  height: 450px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border: 1px solid #000;
+}*/
+#banner{
+  overflow: hidden;
+  height: 450px;
+  background: #fff;
+}
+#slider-box{
+  width: 1600px;
+  float: left;
+}
+#slider{
+  width: 1600px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+#slider #imgs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 450px;
+}
+#slider #imgs li{
+  float: left;
+  z-index: 0;
+}
+#slider #indexs{
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+#slider #indexs li{
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  background: #3e3e3e;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#slider #indexs li:hover,#slider #indexs li.hover{
+  background: #E73A77;
+}
+/*全部商品分类下拉列表*/
+#banner .cate-box{
+  height: 450px;
+  width: 200px;
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+}
+#banner .cate-box li{
+  height: 64px;
+  border-bottom: 1px solid #e3e3e3;
+  width: 100%;
+  padding-top: 10px;
+}
+#banner .cate-box :last-child{
+  border-bottom: 0;
+}
+#banner .cate-box li h4{
+  position: relative;
+}
+#banner .cate-box li h4 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../img/iconlist_04.png") no-repeat;
+  left: 0px;
+  top: 10px;
+}
+#banner .cate-box h4 a {
+  font: bold 12px 'microsoft yahei';
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+#banner .cate-box li .products-type-div {
+  padding-left: 40px;
+  position: relative;
+}
+#banner .cate-box li .products-type-div a{
+  font: normal 12px 'microsoft yahei';
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  width: 65px;
+  float: left;
+  display: block;
+}
+#banner .cate-box li #type-icons-1{
+  background-position: 0 -60px;
+}
+#banner .cate-box li:hover #type-icons-1{
+  background-position: 0 -100px;
+}
+#banner .cate-box li #type-icons-2{
+  background-position: -40px -60px;
+}
+#banner .cate-box li:hover #type-icons-2{
+  background-position: -40px -100px;
+}
+#banner .cate-box li #type-icons-3{
+  background-position: -80px -60px;
+}
+#banner .cate-box li:hover #type-icons-3{
+  background-position: -120px -100px;
+}
+#banner .cate-box li #type-icons-4{
+  background-position: -120px -60px;
+}
+#banner .cate-box li:hover #type-icons-4{
+  background-position: -120px -100px;
+}
+#banner .cate-box li #type-icons-5{
+  background-position: -160px -60px;
+}
+#banner .cate-box li:hover #type-icons-5{
+  background-position: -160px -100px;
+}
+#banner .cate-box li #type-icons-6{
+  background-position: -200px -60px;
+}
+#banner .cate-box li:hover #type-icons-6{
+  background-position: -200px -100px;
+}
+/*网页主体内容*/
+#main{
+  background: #F1F1F1;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.tit{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000;
+}
+.tit span{
+  font-size: 18px;
+  color: #7d7d7d;
+  margin-left: 5px;
+  font-family: tahoma, geneva, sans-serif;
+  font-weight: lighter;
+}
+.sale-green, .sale-yellows,.discount,.sale-greens,.sale-reds,.sale-pink {
+  background: url("../img/iconlist_03.png") no-repeat;
+}
+.sale-green,.sale-yellows,.sale-greens,.sale-reds,.sale-pink{
+  width: 35px;
+  height: 60px;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 8px 0;
+  line-height: 14px;
+}
+.sale-green, .sale-greens {
+  background-position: -120px -20px;
+}
+.sale-reds{
+  background-position: 0 -20px;
+}
+.sale-pink{
+  background-position: -239px -20px;
+}
+.sale-yellows,.sale-yellow,.sale-greens,.sale-reds,.sale-pink{
+  left: 26px;
+  top: 16px;
+}
+.sale-greens{
+  text-align: center;
+  padding: 5px 5px 0;
+}
+.sale-yellow, .sale-yellows {
+  background-position: -180px -20px;
+}
+
+
+
+/*超级特卖模块开始*/
+.content-sale{
+  width: 850px;
+  position: relative;
+  float: left;
+}
+.saleNotice{
+  position: absolute;
+  right: 20px;
+  top: -2px;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  padding-left: 40px;
+}
+.saleNotice i{
+  background: url(../img/iconlist_05.png) no-repeat -559px -282px;
+  display: block;
+  width: 41px;
+  height: 18px;
+  position: absolute;
+  left: -5px;
+  top: 6px;
+}
+.content-sale ul{
+  width: 900px;
+  height: 100px;
+}
+.content-sale li{
+  width: 245px;
+  height: 380px;
+  padding: 10px;
+  background: #fff;
+  float: left;
+  display: inline;
+  margin-right: 18px;
+  margin-bottom: 15px;
+}
+.content-sale li:hover {
+  box-shadow: 0 0 15px 10px #ddd;
+  z-index: 1;
+}
+.sale-img{
+  position: relative;
+}
+.sale-img img{
+  vertical-align: middle;
+  border: 0;
+}
+.time{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.time .time-bg{
+  background: #000;
+  opacity: 0.5;
+  width: 245px;
+  height : 30px;
+  line-height: 30px;
+  display: block;
+}
+.time p{
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.time p b{
+  margin: 0 1px;
+  font-weight: lighter;
+}
+.content-sale li h4{
+  font-size: 14px;
+  margin: 10px 0 3px;
+  color: #666;
+  height: 46px;
+  line-height: 22px;
+  overflow: hidden;
+}
+.content-sale li h4 a{
+  font-weight: lighter;
+  display: block;
+}
+.sale-price{
+  position: relative;
+}
+.sale-price .priced{
+  font-size: 24px;
+  color: #ed1477;
+  float: left;
+  display: inline;
+  margin-right: 3px;
+}
+.sale-price del{
+  font-size: 14px;
+  color: #333;
+  float: left;
+  display: inline;
+  line-height:40px;
+}
+.sale-price .sale-num{
+  font-size: 14px;
+  color: #999;
+  float: right;
+  display: inline;
+  line-height: 40px;
+}
+.sale-price .sale-num strong{
+  color: #333;
+  font-weight: lighter;
+}
+.sale-buys{
+  font-size: 16px;
+  color: #fff;
+  width: 108px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  background: #f31f64;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  display: none;
+}
+.content-sale li:hover .sale-buys{
+  display: block;
+  color: #fff;
+}
+/*超级特卖右侧精选活动等*/
+.content-aside{
+  float: right;
+  display: inline;
+  width: 250px;
+}
+.content-topics{
+  background: #fff;
+  margin-bottom: 15px;
+}
+.content-topics p img{
+  display: block;
+}
+.content-topics p .content-topics1{
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+  font-weight: bold;
+}
+.topics-nav{
+  overflow: hidden;
+  width: 50px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.topics-nav span{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  background: #ff80b3;
+}
+.content-brand{
+  background: #fff;
+  padding: 16px 13px 0;
+  height: 348px;
+  overflow: hidden;
+}
+.content-brand ul{
+  overflow: hidden;
+}
+.content-brand ul li{
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.brand-img{
+  display: block;
+}
+/*品牌推荐*/
+.content-recm{
+  margin-top: 20px;
+}
+.content-recm h2{
+  position: relative;
+}
+.brand-list a{
+  float: left;
+  display: inline;
+  position: relative;
+}
+.brand-list a img{
+  width: 120px;
+  padding: 0 1px;
+  background: #fff;
+  height: 70px;
+  display: block;
+}
+.brand-list a span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ececec;
+  width: 121px;
+  height: 69px;
+  overflow: hidden;
+  text-align: center;
+}
+/*热销推荐*/
+.content-hot{
+  margin-top: 30px;
+}
+.content-hot h2{
+  position: relative;
+  overflow: hidden;
+}
+.content-hot h2 b{
+  font-size: 14px;
+  color: #d8d8d8;
+  float: right;
+  display: inline;
+  margin-right: 105px;
+}
+.content-hot h2 b a{
+  color: #999;
+  margin: 0 12px;
+  line-height: 35px;
+  font-weight: lighter;
+}
+.content-hot h2 b a:hover{
+  color: #E73A77;
+}
+.content-hot h2 .more{
+  color: #bdbdbd;
+  font-weight: lighter;
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.hot-product li{
+  border: 1px solid #f8f8f8;width: 333px;
+  height: 312px;
+  padding: 16px;
+  background: #fff;
+  float: left;
+  display: inline;
+  position: relative;
+  margin-right: -1px;
+  margin-top: -1px;
+}
+.hot-product li:hover {
+  box-shadow: 0 0 15px 10px #ddd;
+  z-index: 1;
+}
+.hot-product li .hot-img img{
+  vertical-align: middle;
+  border: 0;
+}
+.hot-product li h2{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.hot-product li h2 a{
+  color: #333;
+}
+.hot-product li p{
+  font-size: 14px;
+  color: #777;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.discount {
+  width: 40px;
+  height: 20px;
+  background-position: -80px 0;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  margin-left: 5px;
+}
+.sale-buy{
+  font-size: 16px;
+  color: #fff;
+  width: 108px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  background: #f31f64;
+  border-radius: 2px;
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  display: none;
+}
+.content-hot li:hover .sale-buy{
+  display: block;
+  color: #fff;
+}
+
+/*右侧工具条*/
+.toolBar{
+  width: 65px;
+  height: 140px;
+  background: url("../img/iconlist_06.png");
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  margin-top: -140px;
+  z-index: 1000;
+}
+.toolBar a{
+  display: block;
+  width: 65px;
+  height: 66px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  text-indent: 3px;
+}
+.toolBar-app{
+  background: url("../img/iconlist_06.png") no-repeat 0 -435px;
+  position: relative;
+}
+.toolBar-app:hover{
+  background: url("../img/iconlist_06.png") no-repeat -67px -435px;
+}
+.toolBar-shopcart{
+  background: url("../img/iconlist_06.png") no-repeat 0 0;
+  position: relative;
+}
+.toolBar-shopcart:hover{
+  background: url("../img/iconlist_06.png") no-repeat -67px 0;
+}
+.toolBar-totop{
+  background: url("../img/iconlist_06.png") no-repeat 0 -142px;
+}
+.toolBar-totop:hover {
+  background: url("../img/iconlist_06.png") no-repeat -67px -142px;
+}
+
+
+
+
+
+
+
+
+
+
+
